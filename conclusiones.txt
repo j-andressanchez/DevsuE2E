@@ -1,0 +1,24 @@
+##HALLAZGOS
+
+    1. Configuración del ambiente.
+    La integración de cucumber con selenium y Javascript requirió una configuración cuidadosa para asegurar la compatibilidad y 
+    reconocimiento de los escenarios en Gherkin con sus definition correspondientes.
+    La ubicación de los escenarios (archivos feature) y los definition es importante para el funcionamiento de los mismos.
+
+    2. Se determinó emplear en mayor medida localizadores By.css ya que el SUT (sistema bajo prueba) provee el elemento "data-test",
+    es buena práctica emplear estos elementos siempre que el sistema lo permita.
+    Se empleó un módulo adicional para el manejo del driver y de esta manera evitar la implementación del patron "Singleton" ya que 
+    este no se considera una buena práctica.
+
+
+##CONCLUSIONES
+
+    1. La estructura del proyecto se creo basado en un patrón mixto entre screenplay y POM, donde permite separar los localizadores por pantallas,
+    pero mantiene la sencillez del Object Model.
+
+    2. La gestión de datos se implemento en un archivo JSON para dar mayor claridad en los escenarios y evitar llenar de datos el código.
+    De esta manera el framework permite ser escalable y mantenerse legible, si la data crece mucho a futuro se puede implementar un datadriven
+    manejado desde excel.
+
+    3. Se implemento una validación final (Mensaje del header) de esta manera se realizan las asersiones de forma correcta y a futuro permitirá
+    realizar diferentes tipos de asersiones sy/o validaciones según se requiera.

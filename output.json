@@ -1,0 +1,107 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "compra-en-saucedemo;compra-de-dos-productos-en-saucedemo",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Compra de dos productos en saucedemo",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "el usuario ingresa a la login page de saucedemo",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1581300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "se autentica con usuario \"standard_user\" y contraseña \"secret_sauce\"",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1231057200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario agrega 2 productos al carrito",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71210700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "visualiza los productos agregados en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 238576200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "diligencia los datos en el formulario de Compra",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 465520099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "finaliza la compra y valida la confirmación \"Thank you for your order!\"",
+            "match": {
+              "location": "features\\step_definitions\\saucedemoDefinition.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20715299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Compra",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "compra-en-saucedemo",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Compra en saucedemo",
+    "tags": [],
+    "uri": "features\\scenarios\\saucedemo.feature"
+  }
+]
