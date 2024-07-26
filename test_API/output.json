@@ -1,0 +1,262 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-realizados-para-registro-e-inicio-de-sesion-en-blazedemo-con-api;se-realiza-proceso-de-registro-de-usuario-nuevo",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Se realiza proceso de registro de usuario nuevo",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "El usuario envía una solicitud de registro con datos válidos",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332106200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "La API responde con un código de estado 200",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Se valida el mensaje de confirmación \"OK\"",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 212499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Se valida ausencia de data en la respuesta",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 521100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API",
+            "line": 3
+          },
+          {
+            "name": "@signupSuccess",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-realizados-para-registro-e-inicio-de-sesion-en-blazedemo-con-api;se-realiza-proceso-de-registro-de-usuario-existente",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Se realiza proceso de registro de usuario existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "El usuario envía una solicitud de registro con datos existentes",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126404300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "La API responde con un código de estado 200",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Se valida el mensaje de error \"This user already exist.\"",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 196200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API",
+            "line": 10
+          },
+          {
+            "name": "@signupFail",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-realizados-para-registro-e-inicio-de-sesion-en-blazedemo-con-api;se-realiza-proceso-de-login-con-usuario-correcto",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Se realiza proceso de login con usuario correcto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "El usuario envía una solicitud de login con credenciales válidas",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137880700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "La API responde con un código de estado 200",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Se valida generación de token de autenticación",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1268199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API",
+            "line": 16
+          },
+          {
+            "name": "@loginSuccess",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-realizados-para-registro-e-inicio-de-sesion-en-blazedemo-con-api;se-realiza-proceso-de-login-con-usuario-incorrecto",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Se realiza proceso de login con usuario incorrecto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "El usuario envía una solicitud de login con credenciales incorrectas",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135320099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "La API responde con un código de estado 200",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 278500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Se valida el mensaje de error \"User does not exist.\"",
+            "match": {
+              "location": "features\\step_definitions\\demoblazeDefinition.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API",
+            "line": 22
+          },
+          {
+            "name": "@loginFail",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-realizados-para-registro-e-inicio-de-sesion-en-blazedemo-con-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test realizados para registro e inicio de sesion en blazedemo con API",
+    "tags": [],
+    "uri": "features\\scenarios\\demoblaze.feature"
+  }
+]

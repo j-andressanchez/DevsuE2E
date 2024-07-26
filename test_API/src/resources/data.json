@@ -1,0 +1,13 @@
+{
+    "urlSignup": "https://api.demoblaze.com/signup",
+    "urlLogin": "https://api.demoblaze.com/login",
+
+    "userNuevo": "PruebaDevsu",
+    "passNuevo": "PruebaDevsu",
+
+    "userExistente": "DevsuTest",
+    "passExistente": "DevsuTest",
+
+    "userInexistente": "DevsuTest1",
+    "passInexistente": "DevsuTest1"
+}

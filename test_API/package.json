@@ -1,0 +1,20 @@
+{
+  "name": "axios_ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --tags @API && node report.js",
+    "report": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "axios": "^1.7.2",
+    "chai": "^4.5.0"
+  }
+}
