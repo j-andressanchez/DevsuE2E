@@ -17,7 +17,7 @@ Clona el repositorio:
     (Asegurate de tener git instalado en tu equipo)
     - Crea la carpeta donde quieres descargar el proyecto
     - Abre una nueva consola de git
-    - envía el comando: git clone https://github.com/tu-usuario/tu-repo.git
+    - envía el comando: git clone https://github.com/j-andressanchez/DevsuTest
 Descarga el proyecto:
     - Selecciona la opción descargar zip
     - crea la carpeta donde quieres ubicar el proyecto
