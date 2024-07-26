@@ -25,13 +25,25 @@ Descarga el proyecto:
 
 
 Instala las dependencias del proyecto:
-    - En la carpeta raiz (donde descomprimiste o clonaste el proyecto) abre una consola cmd.
-    - Ejecuta el comando "npm install", este descargará las dependencias configuradas en el proyecto.
+    - En la carpeta raiz cada proyecto (test_API y test_E2E) abre una consola cmd.
+    - Ejecuta el comando "npm install", este descargará las dependencias configuradas en cada proyecto.
 
 
 ##EJECUCIÓN
-El proyecto ya se encuentra configurado con un escenario que ejecuta el flujo de compra de 2 productos en saucedemo.
+Los proyectos ya se encuentran configurados con los escenarios que ejecutan los flujos predeterminados así:
+    E2E:
+    - Flujo de compra de 2 productos
+
+    API:
+    - Registro exitoso de usuario nuevo
+    - Registro fallido de usuario existente
+    - Login exitoso con usuario existente
+    - Login fallido con usuario inexistente
 
 Luego de instalar las dependencias en el paso anterior, debes enviar el siguiente comando:
 npm test
 Este ejecutará el flujo automatizado y generará el reporte al finalizar la prueba.
+
+##PREMISAS
+    - Luego de ejecutar por primera vez el test de API, se deberá actualizar la información de "userNuevo" ya que fallará en caso de ejecutar nuevamente sin actualizarlo.
+    El archivo "data.json" se encuentra en la ruta: "test_API/src/resources/data.json"
